@@ -1,0 +1,357 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'sans-serif';
+    letter-spacing: 2px;
+    font-weight: 300;
+    background-color: #F1F1F1;
+    color: #3b3939;
+}
+
+header{
+    font-weight: 500;
+    font-size: 26px;
+    padding: 50px 0 30px 0;
+}
+
+h1{
+    font-size: 36px;
+    line-height: 1.6;
+    color: #3b3939;
+    font-weight: 600;
+}
+
+h5{
+    padding: 20px 0 15px 20px;
+}
+
+.logout{
+    padding-left: 20px;;
+}
+
+/* -----------------------------------Empty Cart Page------------------------------------- */
+.content{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+}
+.emptyCart{
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: 100px auto 30px auto;
+}
+.emptyText1{
+    font-size: 12px;
+    color: #969595;
+}
+/* -----------------------------------Navbar------------------------------------- */
+.main-nav{
+    list-style-type: none;
+}
+
+.main-nav li {
+    text-decoration: none;
+    color: #3B3939;
+    text-align: center;
+    padding: 15px 1px;
+    font-size: 13.5px;
+    font-weight: 400;
+}
+
+.logo {
+    display: inline-block;
+    font-family: 'Damion', cursive;
+    font-size: 30px;
+    color: #F64B3C;
+}
+
+.logout{
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 13.5px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.cart{
+    height: 30px;
+    background: #F64B3C;
+    border-radius: 12px;
+    display: inline-block;
+    padding: 2px 10px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    outline: none;
+}
+.cart:hover{
+    background-color:  #f86a5d;
+    transition: all 0.2s ease-in-out;
+}
+.navbar-toggle {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    cursor: pointer;
+    color:  #F64B3C;
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: #F64B3C;
+        text-decoration: none;
+    }
+} 
+
+/* -----------------------------------Hero------------------------------------- */
+.image{
+    height: 500px;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.order-button{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    background: #f64b3c;
+    color: #ffffff;
+    outline: none;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    font-size: 13px;
+    padding: 12px 45px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.order-button:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color:  #f86a5d;
+    transition: all 0.2s ease-in-out;
+}
+
+.containerHero{
+    position: relative;
+    height: 500px;
+}
+
+.content-block{
+    position: absolute;
+    bottom: 27%;
+    left: 10%;
+}
+
+/* -----------------------------------ToggleBar-------------------------------- */
+.toggleBar{
+    padding: 10px 0 40px 0;
+}
+
+a{
+    color:  #3b3939;
+    position: relative;
+    text-decoration: none;
+}
+.nav-item:hover{
+    color: #F34B36;
+    text-decoration: none;
+}
+a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color:#F34B36;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+    text-decoration: none;
+}
+
+a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+    text-decoration: none;
+}
+
+/* -----------------------------------Card------------------------------------- */
+.cardImg{
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.cardHeader{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.price{
+    float: left;
+    font-size: 14px;
+}
+
+.cardButton{
+    color: #F1F1F1;
+    background-color: #F64B3C;
+    border: 0;
+    border-radius: 100%;
+    float: right; 
+}
+
+.cardButton:hover{
+    background-color:  #f86a5d;
+    transition: all 0.2s ease-in-out;
+}
+
+/*---------------------------------------Footer-----------------------------------*/
+footer{
+    background-color:  #414141;
+    padding: 0 0 10px 0;
+}
+.footer-heading{
+    background-color: #f86a5d;
+    color: #f8d7d7;
+}
+h6{
+    padding: 15px 0 15px 0;
+    font-weight: 400;
+    font-size: 15px;
+}
+.footer-body{
+    padding: 20px 0 20px 0;
+    color: #aaa9a9;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 50px;
+}
+.footer-divs{
+    padding-right: 30px;
+}
+.footer-links{
+    font-size: 12px;
+}
+
+/*---------------------------------------Login & Signup-----------------------------------*/
+.login{
+    background-color: #ffffff;
+    display: inline;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.form{
+    margin-bottom: 10px;
+}
+
+.textbox{
+    background-color: #F1F1F1;
+    font-family: 'Montserrat', 'sans-serif';
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.or{
+    font-size: 13px;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.login-button{
+    font-family: "Montserrat", sans-serif;
+    background: #f64b3c;
+    color: #ffffff;
+    outline: none;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    width: 240px;
+    height: 30px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.login-button:hover{
+    background-color:  #f86a5d;
+    transition: all 0.2s ease-in-out;
+}
+
+.logind{
+    display: flexbox;
+    justify-content: space-between;}
+
+.fb{
+    padding-top: 15px;  
+}
+
+/*---------------------------------------Tables-----------------------------------*/
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+.headings{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.table-body{
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#dropdown{
+    border: 1.5px solid #3B3939;
+    opacity: 0.5;
+    font-weight: bold;
+    height: 30px;
+    color:  #3B3939;
+}
